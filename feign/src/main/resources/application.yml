@@ -1,0 +1,15 @@
+server:
+  port: 8050
+spring:
+  application:
+    name: fegin
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8762/eureka/
+  instance:
+    prefer-ip-address: true
+
+feign:
+  hystrix:
+    enabled: true
